@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <script src="https://unpkg.com/micromodal@0.4.6/dist/micromodal.min.js"></script>
+
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title_header">
+            <h1 class="title_primary">PoKeDeX</h1>
+            <!-- <img src="images/pokebola.png" class="pokebola_img" alt=""> -->
+        </div>
+
+        <div id="container_pokemons">
+
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container background" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <div></div>
+                    <h2 class="modal__title" id="modal-1-title">
+                        Micromodal - num: 001
+                    </h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <div class="modal__content" id="modal-1-content">
+                    <div id="content">
+                        <div class="imageAndTable">
+                            <div class="pokemonImage">
+                                <img src="http://www.serebii.net/pokemongo/pokemon/001.png" alt="" id="imagePokemon" class="imagePokemon">
+                            </div>
+                            <div class="tableDataPokemon">
+                                <table>
+
+                                    <thead>
+                                        <tr>
+                                            <th>Especificação</th>
+                                            <th>Valor</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_properties" id="height_properties">height</td>
+                                            <td class="td_values" id="height_value">0.71 m</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td_properties" id="weight_properties">weight</td>
+                                            <td class="td_values" id="weight_value">6.9 kg</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td_properties" id="candy_properties">candy</td>
+                                            <td class="td_values" id="candy_value">Bulbasaur Candy</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td_properties" id="candy_count_properties">candy count</td>
+                                            <td class="td_values" id="candy_count_value">candy_count</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td_properties" id="egg_properties">egg</td>
+                                            <td class="td_values" id="egg_value">2 km</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td_properties" id="spawn_chance_properties">spawn chance</td>
+                                            <td class="td_values" id="spawn_chance_value">0.69</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_properties" id="avg_spawns_properties">avg spawns</td>
+                                            <td class="td_values" id="avg_spawns_value">69</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td_properties" id="spawn_time_properties">spawn time</td>
+                                            <td class="td_values" id="spawn_time_value">20:00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td_properties" id="multipliers_properties">multipliers</td>
+                                            <td class="td_values" id="multipliers_value">[1.58]</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__type">
+                    <div class="type">
+                        <div class="modal__type__title">type</div>
+                        <div id="type_block">
+                            <span>Grass</span>
+                            <span>Poison</span>
+                        </div>
+                    </div>
+
+                    <div class="weaknesses">
+                        <div class="modal__type__title">weaknesses</div>
+                        <div id="weaknesses_block">
+                            <span>Fire</span>
+                            <span>Ice</span>
+                            <span>Flying</span>
+                            <span>Psychic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="modal__footer">
+                    <div id="prev">
+                        <img src="http://www.serebii.net/pokemongo/pokemon/001.png" id="prevImg" alt="">
+                        <p id="prevName">name</p>
+                        <button class="modal__btn">Anterior</button>
+
+                    </div>
+
+                    <div id="next">
+                        <img src="http://www.serebii.net/pokemongo/pokemon/001.png" id="nextImg" alt="">
+                        <p id="nextName">name</p>
+                        <button class="modal__btn">Proximo</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
